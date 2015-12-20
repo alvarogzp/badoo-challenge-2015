@@ -1,0 +1,10 @@
+Hot or Not
+
+Example
+
+Input:
+Not needed
+
+Output:
+The answer
+
