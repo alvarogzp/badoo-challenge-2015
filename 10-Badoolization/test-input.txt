@@ -1,0 +1,19 @@
+6
+TownHall 1
+Wood 100
+Food 100
+Gold 100
+Stone 100
+Peasant 2
+10
+TownHall 1
+Barracks 1
+ArcheryRange 1
+Peasant 3
+Archer 2
+Soldier 2
+Wood 200
+Food 200
+Gold 200
+Stone 200
+42

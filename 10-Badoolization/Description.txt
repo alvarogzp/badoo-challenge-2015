@@ -1,0 +1,58 @@
+Badoolization
+
+Michael is tired of his little brother, Ralph, winning all their matches of their favourite turn-based strategy game, Badoolization.
+
+Whenever they play a specific map, his brother starts with a certain set of movements that take him a known number of turns. Michael wants to take advantage of the programming lessons he got from his father, by developing a program that can achieve the same as his brother in fewer turns, so he can gain an advantage. He also suspects his brother is cheating sometimes, because he seems to be advancing way too fast, so his program will be able to detect that too.
+
+In order to develop his program, he re-checks the instruction leaflet for the game to acquire all the information he might need in detail, and start making a plan.
+
+For the first part of the game, Michael will just need to focus on getting a steady supply of food, wood, stone and gold. For that, he’ll probably need to get a decent quantity of peasants. They cost 50 units of food each, so they’re not cheap. However they can produce 10 units of food (or wood, stone or gold) every turn, so they can pay for themselves in just 5 turns! They can also create structures, instead of gathering resources, building up 2 points per turn.
+
+In order to get peasants though, you need a Town Hall. It’s a very expensive structure, costing 500 food and 500 stone, and requiring 20 building points, but you always get one at the start of the match, so it should be okay. It takes 3 turns to make a new peasant, so it’s important to choose the right moment for creating one.
+
+But what happens after getting enough peasants and a steady source of resources? War, of course! So he’ll need some barracks too. They just cost 100 wood and 50 stone, which compared to the town hall is ultra cheap, and require 10 building points to be finished. When done, Michael will be able to recruit some soldiers, for a mere 30 food and 20 wood each. Recruiting and training soldiers takes longer than creating new peasants though, so it needs 4 turns for the barracks to be finished recruiting. Training is also intensive, so only one soldier can be trained at a time.
+
+That sorts out close combat, but what about ranged combat? He’ll need an archery range too! He knows that you can only build one after you have made at least one barracks, as barracks unlock the building of more advanced military buildings. The cost of the archery range is a bit higher too, rising to 200 wood and 30 gold, and taking 12 building points. Once built though, the archery range can recruit archers in just 3 turns for 30 wood and 25 gold. Everything is faster when gold is involved!
+
+Now that Michael has read the instructions, everything becomes much clearer, and he’s ready to start developing his program. Hooray!
+What Michael doesn’t realise is that his father is actually going to review his code, so as well as making it work nicely, he should remember to ensure it’s readable, well-structured and has a great object-oriented design.
+
+PS: In this problem we’ll thoroughly evaluate the architecture of the solution, so data-modelling, structure and everything related will be taken into account.
+
+Input
+An integer I indicating the number of lines for the initial state. I lines follow, each containing a string R and an integer Q indicating the name of a resource and quantity respectively.
+
+An integer O indicating the number of lines for the final state. O lines follow, each containing a string R and an integer Q indicating the name of a resource and quantity respectively.
+
+An integer K indicating the number of turns it takes Ralph to get from the initial status to the final status. Please note that your final status can be bigger than the minimum requirements, so, if 3 peasants are requested, having 4 or more peasants is also valid. The same applies to buildings, other units, and resources.
+
+Ouput
+The program should output one line. The value printed should be either CHEATER if it’s impossible to do it in less than or the same time it takes Ralph to do it, or an integer indicating how many turns faster can it be achieved. The answer can be 0 if the optimal time of turns is the one Ralph achieved already, and that means it’s impossible to get any advantage.
+
+
+
+
+Example
+
+Input:
+6
+Food 100
+Wood 100
+Gold 100
+Stone 100
+TownHall 1
+Peasant 2
+5
+Food 100
+Wood 100
+Gold 100
+Stone 100
+Peasant 3
+2
+
+Output:
+Since we already have enough food to buy a peasant when we start (We have 100 and it costs 50). After starting to produce one, which takes 3 turns, we put our 2 peasants to produce food.
+After 3 turns, they will have produced 60 food (10 food each, for 3 turns). 
+That means that after 3 turns we will have 3 peasants and more than the required 100 food.
+Our brother is doing this in only 2 turns, so he is clearly cheating, and the output should be CHEATER.
+
