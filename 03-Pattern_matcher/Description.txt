@@ -1,0 +1,44 @@
+Pattern matcher
+
+Your friend has started to write his own database. He’s asked you to help with writing a function to match strings. He wants something better than a simple “like” in SQL but faster than regexp.
+
+His pattern matcher should be very strict. It should match all strings or none. For example if the pattern is Hello, it will match only Hello, but not Hello_ and not _Hello.
+His pattern should use ! followed by text and ended with another ! to say that the string does not contain text between exclamation sign in the place you specify.
+
+For example:
+a!bb!c should match ac, adc, ammmmmc, but not “abbc” and not “bbbc” and not “bc”.
+Any text inside !! is taken as a character. For example !*! means any character except star. !?! means any character except question mark. !^! means any character except circumflex (^).
+
+^ should match any uppercase symbol.
+a^ should match aA, aB, aC, but not aa, bA.
+
+* should match any or no symbols.
+H*llo should match Hello, Hllo.
+
+? should match any one symbol.
+H?llo should match Hello, Hillo, but not Hllo.
+
+Input
+Each first line contains the pattern, each second line contains the string to match. There can be several pairs of lines until it reaches the end of the file.
+
+Output
+The program should output y if the pattern matched the string or n if not, followed by a new line symbol.
+
+Example
+
+Input:
+hello
+hello world
+*
+hello world
+!Info!*
+Info: Solve this puzzle, don’t upset your friend
+!Info!*
+Debug Info: Solve this puzzle, don’t upset your friend 
+
+Output:
+n
+y
+n
+n
+
