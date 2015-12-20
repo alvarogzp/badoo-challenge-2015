@@ -1,0 +1,56 @@
+Weeping weavers
+
+Good old Mr. Scrooge is getting tired of balancing all the figures required to keep his clothes factory going from one day to the next.
+
+Every day, several weavers come weeping to his door asking for a job in order to go on living one more day, telling him how much time they could put in today, and how skilled they are at making the different goods the factory produces.
+
+Having received all that information, Mr. Scrooge checks his orders for the day and hires the appropriate people in order to save as much money as possible in the process.
+
+After years and years of heartlessly getting the cheapest offers from men and women coming to work at the factory, he has decided to hire you (for a low wage, of course) to design and implement a program that can do this work for him, so he can relax and watch all his employees from his executive office on the top of the factory instead.
+
+Input
+First line will contain the number of test cases T.
+T blocks will follow with:
+Three lines containing one integer each:
+       G that indicates the amount of goods we need to produce.
+       W that indicates the number of available weavers.
+       B that indicates the budget we expect to need in working hours.
+W lines follow, each containing:
+       WB that indicates the amount of hours the weaver can work.
+       G integers WG with the time it takes for this weaver to complete each expected item.
+
+Output
+The program should output one line per test case with OK if the expected budget is met, or the difference between the needed budget estimation and the real minimum needed budget (it can be positive or negative depending on if we overestimated or underestimated the cost). In case the difference between the solution and the budget contains decimals, it should be rounded to the closest integer to always produce an integer answer. In the same way, if the difference between budget and solution is, for example, 0.4 or -0.4, the result would be OK, since the closest integer in both cases is 0.
+The answer can also be NO in this case we can’t complete the order in any way with our current set of weavers and expected goods.
+
+NOTE: More than one weaver can work on finishing the same object. So the object can be done by 1 to n weavers, each putting a variable fraction of their time.
+
+If you take a look at the Output example, for the first case we can use the second weaver to do the second item in 4 hours, and the third weaver to do the first one in 2 hours, for a total of 6 hours, which is our expected time allocation.
+For the second case there is no combination that will allow us to finish all the items.
+For the third case we can do it in 10 hours, 5 for the first weaver doing the first item, and 5 for the second weaver doing the second item. Since our prediction was 8 hours, we will need 2 more hours than expected.
+
+Limits
+T <= 100.
+G W <= 10 for the small cases, G W <= 100 for the large cases.
+B, WB, WG <= 100 for the small cases, B, WB , WG <= 100 000 for the large cases.
+Example
+
+Input:
+3
+2 3 6
+5 5 10
+5 10 4
+5 2 40
+2 3 10
+5 10 10
+5 20 20
+5 30 30
+2 2  8
+5 5  10
+5 20  5
+
+Output:
+OK
+NO
+2
+
