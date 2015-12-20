@@ -1,0 +1,33 @@
+Cheating classes
+
+In one city, all secondary school students pass standard exam each year to measure their progress. Both students and their teachers get benefits for high scores, and that’s why they try to cheat on the test.
+The test consists of several questions. Each question has several options. The city administration wants to identify cheating classes. They develop a heuristic method that helps them to do that. If more than or exactly 50% of students have the same sequence of answers of a specified size, this class becomes suspected of cheating.
+
+Input
+First line will contain the number of test cases T. A T block will follow with:
+One line containing 4 integers separated by spaces.
+The first integer represents number of classes C;
+The second integer represents number of questions Q;
+The third integer represents the number of answers per question A, each answer presented by character from the English alphabet;
+The fourth integer S represents the size of sequence of answers you are looking for.
+
+C lines, each one containing 1 integer and N strings separated by a space. The integer is the number of students N in a class. Each string represents the student’s answer sheet.
+
+Output
+Lines of integers. Each line represents one test case. Each integer represents an index of cheating class in the test case. Integers should be separated by spaces. If class is not cheating then line should be empty.
+
+Limits
+Small cases: T <= 10, C <= 10, Q <= 20, A <= 4, N <= 30
+Large cases: T <= 100, C <= 100, Q <= 100, A <= 10, N <= 100
+Example
+
+Input:
+1
+3 20 4 12
+3 abcdabcdabcdabcdabcd cddcabcddcabacbcabcd abbcabcddcabacdbaaaa
+4 aadbcbaddbaabdccbada dadcbbaddcaabdccbadb dadcbbaddbaabdccbadc cdbcbbaddbaabdccbadb
+5 cbacbbcdbdacacdabcca cabcabcdddacbbdaccca cbacbbcddaacbadabcca cabcccaaadacadaabcca cabcdacbbdaccababcca
+
+Output:
+1
+
