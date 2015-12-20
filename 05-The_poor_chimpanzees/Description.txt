@@ -1,0 +1,34 @@
+The poor chimpanzees
+
+A top research group is developing a new drug that would significantly increase intelligence. It's still in the preclinical phase, but they have already shown that it's safe to consume by chimpanzees.
+Now it's time to prove its effectiveness!
+
+Chimpanzees will be provided with the most exquisite bananas in the world, but the bananas will be locked in a cage. In order to open the cage and enjoy such fine delicacies, the chimpanzees will have to manipulate a set of switches.
+
+All switches will be initially "on", and the cage will be opened when all are turned "off", given that:
+- The rightmost switch can be toggled at will.
+- Any other switches can be toggled if, and only if, the switch to its right is "on" and the rest on the right (if any) are "off".
+
+The key metric is the number of toggles needed to open the cage, and our research group wants to plot some nice graphs where the performance of the chimpanzees will be compared using different dosages of their promising drug and the optimal solution. So what's the minimum number of toggles needed to open the cage?
+
+Input
+First line will contain the number of test cases T.
+T lines will follow with an integer Si that indicates the number of switches.
+
+Output
+For each test case, the minimum number of toggles needed to open the cage.
+
+Limits
+T <= 100.
+Si <= 30 for the small cases, Si <= 100 for the large cases.
+Example
+
+Input:
+2
+2
+3
+
+Output:
+2
+5
+
