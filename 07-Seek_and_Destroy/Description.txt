@@ -1,0 +1,48 @@
+Seek and Destroy
+
+Arthur is tired of mice eating his furniture and cheese while he sleeps and wants to put an end to it in quite a drastic way.
+
+To achieve his goal, he has invented the M.I.C.E. (Mice Interceptor to Capture or Exterminate) machine, which is capable of scanning the mice’s nest and obtaining a map from it in order to plan the optimal path through it.
+Unfortunately, the M.I.C.E. has some battery issues, and it can only move a certain number of times before totally stopping. Arthur needs your capable hands to develop the algorithm for calculating the optimal path whenever possible.
+
+Input
+First line will contain the number of test cases T.
+T blocks will follow with:
+One line containing one integer S that indicates the maximum number of steps (only horizontal or vertical steps, never diagonal) the M.I.C.E. can walk.
+One line with two integers, M N, for the width and height of the nest respectively.
+N lines with M space separated characters for depicting that row of the nest. The characters will be ‘O’ for traversable tiles, ‘X’ for impassable tiles, ‘B’ for the M.I.C.E. starting position and ‘M’ for any traversable tiles containing a mouse.
+
+Output
+The program should output one line per test case with the number of steps left available after traversing the nest visiting all the squares containing mice, or NO if visiting all mice spaces is impossible within the given amount of steps.
+
+If you take a look at the Output example, the first test case would be impossible to do, because the only path available needs 8 steps, and we can only take 5.
+The second test case has two main paths, visiting the maths in the two possible orders. Out of both options, visiting the top right one first, and then the bottom left one takes 9 steps out of the 10 available, so we return 1 as that’s the amount of spare steps we are left with.
+
+Limits
+T <= 100.
+M N <= 10 for the small cases, M N <= 100 for the large cases.
+S <= 100 for the small cases, S <= 10000 for the large cases.
+Mice amount <= 5 for the small cases, Mice amount <= 25 for the big cases
+
+
+Example
+
+Input:
+2
+5
+4 4
+O O O X
+O X O X
+O X O X
+M X B X
+10
+4 4
+O O O M
+O X O X
+M X O X
+O X B X
+
+Output:
+NO
+1
+
