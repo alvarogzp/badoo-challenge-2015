@@ -3,8 +3,8 @@
 These are my solutions to the Badoo Coding Challenge (2015 edition).
 
 For each problem, there is:
-- A `Description` file with problem description.
-- A `solution` file with the code that solves the problem, with the extension according to the language used.
+- A `Description.txt` file with problem description.
+- A `solution` file with the code that solves the problem, with the extension according to the language used (`.py` for python, `.java` for java, etc.).
 - The problem input and output for the test and final phases.
 - In some problems, there are additional files.
 
