@@ -10,9 +10,9 @@ For each problem, there is:
 
 
 **Languages used**
-- Python (problems 01, 02, 05, 06, 07, 08, 09)
-- Bash (problem 03)
-- Java (problem 10)
+- Python (problems [01](01-Pass_the_message), [02](02-Car_Park), [05](05-The_poor_chimpanzees), [06](06-Cheating_classes), [07](07-Seek_and_Destroy), [08](08-Weeping_weavers), [09](09-Hot_or_Not))
+- Bash (problem [03](03-Pattern_matcher))
+- Java (problem [10](10-Badoolization))
 
 
 ### Problem notes
